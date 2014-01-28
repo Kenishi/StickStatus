@@ -1,0 +1,26 @@
+StickStatus
+
+***
+Stickam no longer exists therefore this program will not function. This project exists merely as a reference to show the progress of my programming over the years. I have not cleaned up or modified any of the code or the GUI. (Last Modified: 2006-08-13)
+
+This program should still compile and run perfectly fine, although due to changes in Java over the years, there will be some errors that will occur from attempting to import libraries. 
+***
+
+This was an early project of mine built around 2006 using Java, the Swing GUI, and SysTrayMenu library (http://systray.sourceforge.net). I had been programming on my own for up to 2 years at this point.
+
+GOAL: Create a application that could be minimized and ran in the background to monitor user status for people on Stickam.com
+
+PROBLEM: Stickam was a web casting site which allowed people to stream their webcam to multiple viewers over the internet. People could go online at any time and then go live. During those years, the only real methods to be modified when your friends went online was via AOL Instant Messenger, Email, and I believe SMS as well. The problem was that this notification process was sometimes delayed from anywhere from 10 minutes upward to an hour. I had many friends that would sometimes get on and wait and see if anyone joined the stream/chat. Some were impatient and would log off after 5 minutes. So I wanted a better method for knowing when people went Live instead of relying on Stickam to inform me.
+
+SOLUTION: During this time I was experimenting more with Java's GUI and also starting to get more into actually accessing the web using my applications.
+Prior to deciding to write the program, I did a little investigating and noticed that the OFFLINE/ONLINE/LIVE indicator that existed on a user's page, was not HTML based but was supplied from a PHP form and was accessed by Javascript. The PHP page supplied some stats on the user but the key thing it supplied was the current status of the user.
+
+I took this and built a basic application to display the users inside a Swing List. Over a few iterations, I expanded the features of the application to include:
+Added Background Thread checking (So the app would block during checks and lock the GUI)
+Added in menu option to start/stop background thread
+The ability to select certain users to alert for when they go live
+Colorized the Status bar and added in an Option Screen to allow for changing the colors
+Added in Tray Minimization and a flashing icon for changes in user status
+Added in Logging for user status changes and allowed for specifying what events to log (User goes online/offline/live)
+
+Overall I was fairly pleased with how well the program turned out and used it for months. Unfortunately, I got bored of Stickam and stopped using the service and the application as well. Stickam.com such down in early 2013.
